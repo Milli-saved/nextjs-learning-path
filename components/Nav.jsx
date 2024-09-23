@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
+import Logo from "@public/assets/images/logo.svg";
+
 const Nav = () => {
   return (
     <nav className="flex-between w-full mb-16 pt-3">
@@ -14,7 +16,7 @@ const Nav = () => {
           width={30}
           height={30}
           className="object-contain"
-          src="/assests/images/logo.svg"
+          src={Logo}
         />
       </Link>
     </nav>
